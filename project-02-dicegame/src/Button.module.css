@@ -1,0 +1,13 @@
+.button {
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-size: 24px;
+}
+
+.button.purple {
+  background: #6f00ff;
+}
+
+.button.navy {
+  background: #141a25;
+}
