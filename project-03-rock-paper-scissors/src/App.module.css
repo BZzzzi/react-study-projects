@@ -1,0 +1,68 @@
+.wrapper {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.header {
+  width: 100%;
+  border-radius: 32px;
+  background-color: #272d3a;
+  padding: 32px;
+  margin-top: 32px;
+}
+
+.subTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.subTitle.top {
+  margin-bottom: 20px;
+}
+
+.header.content {
+  margin-top: 16px;
+}
+
+.gameHistory {
+  min-height: 170px;
+  background-color: #323949;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  margin: 28px auto 0;
+  background-color: #1f232e;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,18 @@
+.handButton {
+  display: inline-flex;
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.handButton:hover {
+  background: #6f00ff;
+}
