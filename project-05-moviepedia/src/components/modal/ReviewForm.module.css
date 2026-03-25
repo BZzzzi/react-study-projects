@@ -1,0 +1,39 @@
+.modalForm {
+  width: 758px;
+  display: flex;
+  gap: 20px;
+}
+
+.formLayout {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+
+.formContent {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.textarea {
+  flex-grow: 1;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0 auto;
+  color: red;
+}

@@ -1,0 +1,40 @@
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.primary {
+  padding: 13px 40px;
+  border-radius: 0 12px;
+  background-color: black;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.second {
+  padding: 13px 40px;
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ghost {
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.danger {
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+}
