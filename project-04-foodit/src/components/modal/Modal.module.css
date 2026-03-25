@@ -1,0 +1,27 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  border-radius: 24px;
+  background-color: #ffffff;
+  padding: 32px;
+}
+
+.modalTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalTitle img {
+  cursor: pointer;
+}

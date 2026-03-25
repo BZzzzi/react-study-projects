@@ -1,0 +1,32 @@
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.contentsLayout {
+  display: flex;
+  gap: 12px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contents div {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 12px;
+}
+
+.contents Textarea {
+  flex-grow: 1;
+}
+
+.formLayout .buttonLayout {
+  display: flex;
+  justify-content: end;
+}
