@@ -4,6 +4,7 @@ import styled, {
   createGlobalStyle,
   ThemeProvider,
 } from "styled-components";
+import { useState } from "react";
 import logoImg from "./assets/codeit.png";
 import kakaoIcon from "./assets/kakao.svg";
 import spinnerIcon from "./assets/spinner.svg";
@@ -80,6 +81,21 @@ const ButtonContains = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
+`;
+
+const ThemeToggleButton = styled.button`
+  align-self: flex-end;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid ${({ theme }) => theme.color};
+  border-radius: 8px;
+  background-color: transparent;
+  color: ${({ theme }) => theme.color};
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 const borderRadius = css`
@@ -159,11 +175,22 @@ const THEMES = {
 };
 
 function App() {
+  const [themeMode, setThemeMode] = useState("dark");
+  const isDarkMode = themeMode === "dark";
+  const currentTheme = isDarkMode ? THEMES.dark : THEMES.light;
+
+  const handleThemeToggle = () => {
+    setThemeMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+  };
+
   return (
     <>
-      <ThemeProvider theme={THEMES.light}>
+      <ThemeProvider theme={currentTheme}>
         <GlobalStyled />
         <Contains>
+          <ThemeToggleButton type="button" onClick={handleThemeToggle}>
+            {isDarkMode ? "라이트 테마" : "다크 테마"}
+          </ThemeToggleButton>
           <TitleContains>
             <Img src={logoImg} alt="로고" />
             <SignUpNotice>
